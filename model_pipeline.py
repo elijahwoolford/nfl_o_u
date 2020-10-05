@@ -171,7 +171,7 @@ def analyze_fe_importance(importances: list, df_features: pd.DataFrame):
 
 
 def analyze_results(y_true, y_pred, df_data_lines, df_final):
-    # Maybe stats?
+    # Maybe model_exp_output?
 
     df_data_lines_test = df_data_lines.tail(len(y_true)).drop(["Favorite_Home", "Underdog_Home"], axis=1).reset_index(
         drop=True)
